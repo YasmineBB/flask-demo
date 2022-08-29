@@ -11,7 +11,27 @@ def index():
 
 @app.route("/about")
 def about():
-    return render_template("about.html")
+    return render_template("about.html", page_title="About")
+
+
+@app.route("/wines")
+def wines():
+    return render_template("wines.html")
+
+
+@app.route("/wines-orange")
+def winesOrange():
+    return render_template("wines-orange.html")
+
+
+@app.route("/wines-white")
+def winesWhite():
+    return render_template("wines-white.html")
+
+
+@app.route("/wines-red")
+def winesRed():
+    return render_template("wines-red.html")
 
 
 @app.route("/contact")
