@@ -1,0 +1,13 @@
+/* Our wines page */
+
+.featurette {
+    padding: 10px;
+}
+
+.col-md-5 img {
+    width: 100%;
+}
+
+.col-md-7 h3 {
+    padding-top: 10px;
+}
