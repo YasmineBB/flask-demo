@@ -6,15 +6,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{{ url_for('static', filename='vendor/bootstrap/css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/clean-blog.min.css') }}">
-    <title>Travel Away</title>
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <title>Maison Bleue</title>
 </head>
 
 <body>
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
         <div class="container">
-            <a class="navbar-brand" href="{{ url_for('index') }}">Travel Away</a>
+            <!-- <a class="navbar-brand" href="{{ url_for('index') }}"><img class="logo"
+                    src="data:image/png;base64,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"
+                    alt=""></a> -->
             <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
                 data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -29,6 +33,21 @@
                     <li class="nav-item">
                         <a class="nav-link" href="{{ url_for('about') }}">About</a>
                     </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Our Natural Wines
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="{{ url_for('winesOrange') }}">Orange Wine</a>
+                            <a class="dropdown-item" href="{{ url_for('winesWhite') }}">White Wine</a>
+                            <a class="dropdown-item" href="{{ url_for('winesRed') }}">Red Wine</a>
+                            <!-- <a class="dropdown-item" href="#">Piquette</a>
+                            <a class="dropdown-item" href="#">Amphora Wine</a> -->
+                        </div>
+                    </li>
+
                     <li class="nav-item">
                         <a class="nav-link" href="{{ url_for('booking') }}">Book With Us</a>
                     </li>
@@ -41,17 +60,17 @@
     </nav>
 
     <!-- Page Header -->
-    <header class="masthead" style="background-image: url('https://images.unsplash.com/photo-1437846972679-9e6e537be46e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80');
-        position: relative;
+    <header class="masthead" style="background-image: url('https://images.pexels.com/photos/6401669/pexels-photo-6401669.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+
         ">
-        <div class=" overlay">
+        <div class=" ">
         </div>
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-md-10 mx-auto">
                     <div class="site-heading">
-                        <h1>Travel Away</h1>
-                        <span class="subheading">Explore what the world has to offer</span>
+                        <h1>Maison Bleue</h1>
+                        <span class="subheading">Explore our selection of natural wines</span>
                     </div>
                 </div>
             </div>
@@ -97,7 +116,7 @@
                             </a>
                         </li>
                     </ul>
-                    <p class="copyright text-muted">Copyright &copy; Your Website 2020</p>
+                    <p class="copyright text-muted">Copyright &copy; Your Website <span id="copyright"></span></p>
                 </div>
             </div>
         </div>
@@ -109,6 +128,10 @@
 
     <!-- Custom scripts for this template -->
     <script src="{{ url_for ('static', filename='js/clean-blog.min.js') }}"></script>
+
+    <script>
+        $("#copyright").text(new Date().getFullYear());
+    </script>
 </body>
 
 </html>
