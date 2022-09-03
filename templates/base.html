@@ -30,8 +30,15 @@
                     <li class="nav-item">
                         <a class="nav-link" href="{{ url_for('index') }}">Home</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ url_for('about') }}">About</a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="{{ url_for('about') }}" id="navbarDropdownMenuLink"
+                            role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            About
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="{{ url_for('glossary') }}">Wine Glossary</a>
+                            <a class="dropdown-item" href="{{ url_for('about') }}">About Us</a>
+                        </div>
                     </li>
 
                     <li class="nav-item dropdown">
@@ -40,17 +47,18 @@
                             Our Natural Wines
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <a class="dropdown-item" href="{{ url_for('winesOrange') }}">Orange Wine</a>
-                            <a class="dropdown-item" href="{{ url_for('winesWhite') }}">White Wine</a>
-                            <a class="dropdown-item" href="{{ url_for('winesRed') }}">Red Wine</a>
+                            <a class="dropdown-item" href="{{ url_for('winesOrange') }}">Orange</a>
+                            <a class="dropdown-item" href="{{ url_for('winesWhite') }}">White</a>
+                            <a class="dropdown-item" href="{{ url_for('winesRed') }}">Red</a>
+                            <a class="dropdown-item" href=#>Rosé</a>
                             <!-- <a class="dropdown-item" href="#">Piquette</a>
                             <a class="dropdown-item" href="#">Amphora Wine</a> -->
                         </div>
                     </li>
-
+                    <!-- 
                     <li class="nav-item">
                         <a class="nav-link" href="{{ url_for('booking') }}">Book With Us</a>
-                    </li>
+                    </li> -->
                     <li class="nav-item">
                         <a class="nav-link" href="{{ url_for('contact') }}">Contact</a>
                     </li>

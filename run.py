@@ -14,6 +14,11 @@ def about():
     return render_template("about.html", page_title="About")
 
 
+@app.route("/glossary")
+def glossary():
+    return render_template("glossary.html", page_title="Glossary")
+
+
 @app.route("/wines")
 def wines():
     return render_template("wines.html")
