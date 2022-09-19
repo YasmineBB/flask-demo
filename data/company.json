@@ -1,0 +1,21 @@
+[{
+        "name": "Jenna Smot",
+        "description": "Founder",
+        "image_source": "https://images.pexels.com/photos/5324911/pexels-photo-5324911.jpeg?cs=srgb&dl=pexels-anna-shvets-5324911.jpg&fm=jpg"
+    },
+    {
+        "name": "Evelyn Mckenna",
+        "description": "Director",
+        "image_source": "https://images.pexels.com/photos/7651742/pexels-photo-7651742.jpeg?cs=srgb&dl=pexels-kindel-media-7651742.jpg&fm=jpg"
+    },
+    {
+        "name": "Grace Penn",
+        "description": "Marketing Manager",
+        "image_source": "https://images.pexels.com/photos/6457554/pexels-photo-6457554.jpeg?cs=srgb&dl=pexels-alexander-suhorucov-6457554.jpg&fm=jpg"
+    },
+    {
+        "name": "Kristina Foy",
+        "description": "Accounts Manager",
+        "image_source": "https://images.pexels.com/photos/4476608/pexels-photo-4476608.jpeg?cs=srgb&dl=pexels-karolina-grabowska-4476608.jpg&fm=jpg"
+    }
+]
